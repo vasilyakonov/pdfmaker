@@ -60,7 +60,7 @@ pdf.add_font('sysfont', '', r"/app/font.ttf", uni=True)
 pdf.alias_nb_pages()
 pdf.add_page()
 pdf.set_font('font', '', 12)
-for i in range(1, 41):
+for i in range(1, 100):
     pdf.cell(0, 10, 'Printing line number ' + str(i), 0, 1)
 pdf.output('tuto3.pdf', 'F')
 
