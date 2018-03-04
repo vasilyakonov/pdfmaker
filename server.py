@@ -48,7 +48,7 @@ class PDF(FPDF):
         # Arial italic 8
         self.set_font('Arial', 'I', 8)
         # Page number
-        self.cell(0, 10,'{nb}', 0, 0, 'C')
+        self.cell(0, 10,str(self.page_no()) + '{nb}', 0, 0, 'C')
 
 # Instantiation of inherited class
 pdf = PDF()
@@ -59,11 +59,11 @@ pdf.add_font('font', '', 'font.ttf', uni=True)
 pdf.add_font('sysfont', '', r"/app/font.ttf", uni=True)
 pdf.alias_nb_pages()
 pdf.add_page()
-pdf.set_font('font', '', 24)
-pdf.cell(0, 10, 'King of Carrot Flowers', 0, 1)
+pdf.set_font('font', '', 18)
+pdf.cell(0, 10, "King of Carrot Flowers", 0, 1)
 pdf.add_page()
 pdf.set_font('font', '', 12)
-for i in range(1, 100):
+for i in range(1, 41):
     pdf.cell(0, 10, 'Printing line number ' + str(i), 0, 1)
 pdf.output('tuto3.pdf', 'F')
 
