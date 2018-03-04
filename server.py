@@ -48,8 +48,9 @@ class PDF(FPDF):
 # Instantiation of inherited class
 pdf = PDF()
 pdf.alias_nb_pages()
-pdf.add_page()
-pdf.set_font('Times', '', 12)
-for i in range(1, 41):
-    pdf.cell(0, 10, 'Printing line number ' + str(i), 0, 1)
+for f in range(1,10):
+  pdf.add_page()
+  pdf.set_font('Times', '', 12)
+  for i in range(1, 41):
+      pdf.cell(0, 10, 'Printing line number ' + str(i), 0, 1)
 pdf.output('tuto2.pdf', 'F')
