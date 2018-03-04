@@ -48,7 +48,7 @@ class PDF(FPDF):
         # Arial italic 8
         self.set_font('Arial', 'I', 8)
         # Page number
-        self.cell(0, 10,'/{nb}', 0, 0, 'C')
+        self.cell(0, 10,'{nb}', 0, 0, 'C')
 
 # Instantiation of inherited class
 pdf = PDF()
