@@ -1,0 +1,7 @@
+tweepy
+requests
+pillow
+pip
+aggdraw
+dropbox
+fpdf2
