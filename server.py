@@ -60,7 +60,7 @@ pdf.add_font('sysfont', '', r"/app/font.ttf", uni=True)
 pdf.alias_nb_pages()
 pdf.add_page()
 pdf.set_font('font', '', 18)
-pdf.cell(0, 1000, "King of Carrot Flowers", 0, 1)
+pdf.cell(0, 500, "King of Carrot Flowers", 0, 1)
 pdf.add_page()
 pdf.set_font('font', '', 12)
 for i in range(1, 41):
