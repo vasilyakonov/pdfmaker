@@ -55,7 +55,7 @@ def create_pdf():
   pdf.set_font('font.ttf', '', 12)
   for i in range(1, 41):
       pdf.cell(0, 10, 'Printing line number ' + str(i), 0, 1)
-  pdf.output('tuto2.pdf', 'F')
+  pdf.output('pdf.pdf', 'F')
   
 
 
