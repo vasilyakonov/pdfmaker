@@ -29,17 +29,17 @@ from fpdf import FPDF
 
 
 class PDF(FPDF):
-    def header(self):
+    #def header(self):
         # Logo
-        self.image('logo_pb.png', 10, 8, 33)
+        #self.image('logo_pb.png', 10, 8, 33)
         # Arial bold 15
-        self.set_font('Arial', 'B', 15)
+        #self.set_font('Arial', 'B', 15)
         # Move to the right
-        self.cell(80)
+        #self.cell(80)
         # Title
-        self.cell(30, 10, 'Title', 1, 0, 'C')
+        #self.cell(30, 10, 'Title', 1, 0, 'C')
         # Line break
-        self.ln(20)
+       # self.ln(20)
 
     # Page footer
     def footer(self):
