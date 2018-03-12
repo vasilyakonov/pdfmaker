@@ -1,0 +1,11 @@
+This publication contains a compilation of images, picked at random from a Mi*****ft B*ng web search by an algorithm written in python. The list of possible queries is based on  Botwiki's corpora api "new technologies" list on GitHub.
+
+It's contents may be confusing, explicit or completely non sequitur. 
+
+The purpose of the Journal is to explore the possibilities of application of accidental content in a somewhat curated form by sampling data from a randomised and contextually inconsistent stream of information and compilining it in a pdf that could be printed and distributed as a publication.
+
+Curated and designed by: www.instagram.com/_w_v_d_/
+
+Sources:
+https://github.com/dariusk/corpora/blob/master/data/technology
+B*ng.com

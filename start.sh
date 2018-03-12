@@ -1,3 +1,3 @@
 #!/bin/sh
 
-python server.py && sleep 15m
+#python server.py && sleep 1440m
