@@ -3,5 +3,6 @@ requests
 pillow
 pip
 aggdraw
+dropbox
 fpdf2
 uuid

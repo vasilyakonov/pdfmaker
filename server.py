@@ -125,7 +125,7 @@ else:
   #pdf.add_font('sysfont', '', r"/app/font.ttf", uni=True)
 
   pdf.alias_nb_pages()
-  pages = 10
+   #pages = 10
   pdf.set_left_margin(30)
   #Cover
   pdf.add_page('P', 'A4', False)
@@ -636,7 +636,7 @@ else:
       f = open(file_from, 'rb')
       dbx.files_upload(f.read(), file_to, mode=WriteMode('overwrite'))
   upload_file(file_from,file_to)
-  '''def tweet_image():
+  def tweet_image():
     url = '%s' % random.choice(tuple(images_list))
     response = requests.get(url, stream=True)
     with open('img.jpg', 'wb') as out_file:
@@ -659,7 +659,7 @@ else:
         im.save('/app/img.jpg')
         del response
     filename = 'img.jpg'
-    text = "http://bit.ly/2FrONFY"
+    text = "https://www.dropbox.com/sh/wmjpvxnnma9oeho/AADegO0ftcnzoY8sQDFhLywPa?dl=0"
     return filename,text
   
   
@@ -687,6 +687,9 @@ else:
 
   if __name__ == "__main__":
     image,text = tweet_image()
-    tweet(image,text)'''
+    tweet(image,text)
 logging.info('Done!') 
 print 'Done!'
+os.remove('/app/myapp.log')
+os.remove('/app/ISSUE.pdf')
+os.remove('/app/img.jpg')
